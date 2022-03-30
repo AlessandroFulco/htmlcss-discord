@@ -13,13 +13,14 @@ body {
     width: 80%;
     margin: 0 auto;
 }
+.bg-color-gray {
+    width: 100%;
+    background-color: #f6f6f6;
+}
 .container.float::after {
     content: "";
     display: table;
     clear: both;
-}
-main {
-    padding-bottom: 150px;
 }
 /* end regole generali */
 /* stili header */
@@ -58,12 +59,12 @@ header {
 #menu-navigazione ul li {
     float: left;
 }
-#menu-navigazione ul li a {
+ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 11px;
 }
-#menu-navigazione ul li a:hover {
+ul li a:hover {
     text-decoration: underline;
     text-shadow: 0 5px 7px rgba(0, 0, 0, 0.7);
 }
@@ -158,11 +159,17 @@ header {
     width: 65%;
     margin: 0 auto;
 }
+.label-text.last h2 {
+    padding-top: 100px;
+}
 .label.last {
     float: none;
     width: 65%;
     margin: 0 auto;
     text-align: center;
+}
+.container.download {
+    padding-bottom: 150px;
 }
 main .container.download:last-child  {
     text-align: center;
@@ -176,18 +183,94 @@ main .container.download:last-child  {
     left: 50%;
     transform: translate(-50%, -100%);
 }
-.container h3 {
+.container.download h3 {
     font-size: 25px;
     color: #23272a;
 
 }
-a#mac {
+a.mac {
     margin-top: 30px;
     text-decoration: none;
-    color: #000;
+    color: #fff;
     background-color: #8ea1e1;
     padding: 16px 25px;
     border-radius: 25px;
     word-spacing: 3px;
     display: inline-block;
+}
+a.mac > span {
+    color: #fff;
+}
+/* end stile main */
+/* stile footer */
+footer {
+    background-color: #23272a;
+    padding-top: 100px;
+}
+.credits{
+    width: calc((100% - 25%) / 4);
+    float: left;
+}
+.credits.first-column {
+    width: 25%;
+}
+.credits.first-column h3 {
+    width: 70%;
+    font-size: 35px;
+    color: #748bdf;
+    margin-bottom: 25px;
+}
+
+.credits #flags-section select#language{
+    border: none;
+    background-color: #23272a;
+    color: #fff;
+}
+#flags-section {
+    height: 20px;
+    margin-bottom: 20px;
+}
+.flags {
+    width: auto;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+#social i {
+    margin: 10px 10px 10px 0;
+    font-size: 20px;
+    color: #fff;
+}
+.credits h4 {
+    margin: 10px 0 10px 10px;
+    color: #748bdf;
+}
+.credits li {
+    padding: 10px 0;
+}
+footer .credits ul {
+    list-style-type: none;   
+}
+#lower-footer {
+    position: relative;
+    width: 80%;
+    margin: 50px auto 0;
+    height: 100px;
+    border-top: 1px solid #748bdf;
+}
+#lower-footer img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+#lower-footer a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+#lower-footer a {
+    margin-top: 0;
 }
