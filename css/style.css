@@ -97,11 +97,18 @@ header {
 }
 /* prima sezione jumbotron */
 #slogan {
-    width: 100%;
+    width: 49%;
     margin: 0 auto;
-    /* debug */
-    background-color: green;
-    height: 200px;
+    text-align: center;
+    padding: 130px 0 30px 0;
+    color: #fff;
+}#slogan h1 {
+    margin-bottom: 30px;
+    font-size: 65px;
+}
+#slogan p {
+    font-size: 20px;
+    line-height: 25px;
 }
 #button-link {
     width: 100%;
