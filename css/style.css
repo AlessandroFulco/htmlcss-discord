@@ -25,14 +25,12 @@ main {
 /* stili header */
 header {
     width: 100%;
-
     background-color: #255ee9;
 }
 /* stile logo, menu, pulsante, jumbo */
 #logo, #menu-navigazione, #accedi {
     float: left;
     height: 100px;
-
 }
 /* stile logo */
 #logo {
@@ -166,22 +164,21 @@ header {
     margin: 0 auto;
     text-align: center;
 }
-main .container:last-child  {
+main .container.download:last-child  {
     text-align: center;
 }
-.container h3 {
-    font-size: 25px;
-    color: #23272a;
-    text-align: center;
+.container.download div {
+    position:  relative;
 }
-.container div {
-    position: relative;
-}
-.container div span {
+.container.download div span {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
+}
+.container h3 {
+    font-size: 25px;
+    color: #23272a;
 }
 a#mac {
     margin-top: 30px;
