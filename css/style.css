@@ -49,3 +49,18 @@ header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
 }
+/* prima sezione jumbotron */
+#slogan {
+    width: 100%;
+    margin: 0 auto;
+    /* debug */
+    background-color: green;
+    height: 200px;
+}
+#button-link {
+    width: 100%;
+    margin: 0 auto;
+    /* debug */
+    background-color: red;
+    height: 100px;
+}
