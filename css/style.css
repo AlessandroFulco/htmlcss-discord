@@ -25,20 +25,38 @@ header {
     height: 100px;
     background-color: #3161e0;
 }
-/* stile logo, menu, pulsante */
-#logo, #menu-navigazione, #accedi {
+/* stile logo, menu, pulsante, jumbo */
+#logo, #menu-navigazione, #accedi, .jumbo-button {
     float: left;
-    /* debug */
     height: 100px;
+    /* debug */
     background-color: blueviolet;
     border: 2px solid yellow;
 }
+/* stile logo */
 #logo {
     width: 20%;
+    position: relative;
 }
+#logo img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+/* stile menu di navigazione */
 #menu-navigazione {
     width: 60%;
 }
+#menu-navigazione ul li {
+    float: left;
+}
+#menu-navigazione ul::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+/* stile pulsante accedi */
 #accedi {
     width: 20%;
 }
@@ -63,4 +81,15 @@ header {
     /* debug */
     background-color: red;
     height: 100px;
+}
+#button-link::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#mac {
+    width: 50%;
+}
+#browser {
+    width: 50%;
 }
